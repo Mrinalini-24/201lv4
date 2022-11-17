@@ -10,19 +10,19 @@ describe("Todo List Test Suite", () => {
     const oneDay = 60 * 60 * 24 * 1000;
     [
       {
-        title: "Buy milk",
+        title: "Buying milk",
         completed: false,
         dueDate: new Date(today.getTime() - 2 * oneDay).toLocaleDateString(
           "en-CA"
         ),
       },
       {
-        title: "Pay rent",
+        title: "Paying rent",
         completed: false,
         dueDate: new Date().toLocaleDateString("en-CA"),
       },
       {
-        title: "Submit assignment",
+        title: "Submiting assignment",
         completed: false,
         dueDate: new Date(today.getTime() + 2 * oneDay).toLocaleDateString(
           "en-CA"
