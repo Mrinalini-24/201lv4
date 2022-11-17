@@ -30,7 +30,7 @@ describe("Todo List Test Suite", () => {
       },
     ].forEach(add);
   });
-  test("Should add a new todo", () => {
+  test("Should add  new todo", () => {
     expect(all.length).toEqual(3);
 
     add({
@@ -42,21 +42,21 @@ describe("Todo List Test Suite", () => {
     expect(all.length).toEqual(4);
   });
 
-  test("Should mark a todo as complete", () => {
+  test("Should mark todo as complete", () => {
     expect(all[0].completed).toEqual(false);
     markAsComplete(0);
     expect(all[0].completed).toEqual(true);
   });
 
-  test("Should retrieve overdue items", () => {
+  test("Should retrieve the overdue items", () => {
     expect(overdue().length).toEqual(1);
   });
 
-  test("Should retrieve due today items", () => {
+  test("Should retrieve the due today items", () => {
     expect(dueToday().length).toEqual(2);
   });
 
-  test("Should retrieve due later items", () => {
+  test("Should retrieve the due later items", () => {
     expect(dueLater().length).toEqual(1);
   });
 });
